@@ -474,3 +474,10 @@ class Queue:
                 champion = current.data
             current = current.next
         return champion        
+        
+    def headQ(self):  # return the front of our queue to help in the mergesort algorithm
+
+        if self.front is None:
+            return math.inf , None
+        
+        return self.front.data
